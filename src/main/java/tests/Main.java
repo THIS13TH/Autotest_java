@@ -2,6 +2,7 @@ package tests;
 
 public class Main {
 
+
     public static void main(String[] args){
         Car car = new Car();
         car.markName = "SummerCar";
@@ -15,6 +16,7 @@ public class Main {
         car.soundMotor();
         System.out.println(car.getMaxVelosity());
     }
+
 
 
 }

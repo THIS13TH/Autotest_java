@@ -2,6 +2,7 @@ package tests;
 
 public class Car {
 
+
     String markName;
     int ageRelease;
     int maxVelosity;
@@ -18,5 +19,6 @@ public class Car {
     int getMaxVelosity(){
         return maxVelosity;
     }
+
 
 }
