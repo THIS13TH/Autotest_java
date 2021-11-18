@@ -6,13 +6,25 @@ repositories {
     mavenCentral()
 }
 
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 dependencies {
+    // Selenide
     testImplementation (
             "com.codeborne:selenide:5.25.0",
-            "org.junit.jupiter:junit-jupiter-api:5.8.0")
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.0"
+            "org.junit.jupiter:junit-jupiter-api:5.8.0",
+            "org.slf4j:slf4j-api:1.7.30",
+            "org.slf4j:slf4j-simple:1.7.30"
+    )
+    // JUnit 5
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.2")
 }
 
 test {
     useJUnitPlatform()
 }
+
