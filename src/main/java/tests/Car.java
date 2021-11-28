@@ -3,6 +3,7 @@ package tests;
 public class Car {
 
 
+    // Переменные, свойства, состояние
     String markName;
     int ageRelease;
     int maxVelosity;
@@ -10,6 +11,7 @@ public class Car {
     int kMonOneTank;
 
 
+    // Функции, методы, поведение
     void readMarkName(String markName){
         System.out.println(markName);
     }
